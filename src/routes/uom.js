@@ -1,10 +1,10 @@
 import express from 'express'
 import { testEnvironmentVariable } from '../settings.js';
 
-const usersRouter = express.Router();
+const uomRouter = express.Router();
 
-usersRouter.get('/', function (req, res, next) {
+uomRouter.get('/', function (req, res, next) {
     return res.status(200).json({ message: testEnvironmentVariable });
 });
 
-export default usersRouter;
+export default uomRouter;
