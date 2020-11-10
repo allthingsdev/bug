@@ -1,1 +1,2 @@
-# Budgeting App API
+# Budgeting App API 
+[![Build Status](https://travis-ci.com/allthingsdev/bug.svg?branch=master)](https://travis-ci.com/allthingsdev/bug) [![Coverage Status](https://coveralls.io/repos/github/allthingsdev/bug/badge.svg?branch=04-tests-setup)](https://coveralls.io/github/allthingsdev/bug?branch=04-tests-setup) [![Maintainability](https://api.codeclimate.com/v1/badges/8d2519ba3a0ee802d12a/maintainability)](https://codeclimate.com/github/allthingsdev/bug/maintainability)
