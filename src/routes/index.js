@@ -1,10 +1,20 @@
 import express from 'express';
-import { testEnvironmentVariable } from '../settings.js';
+import * as controllers from '../controllers';
+import categoriesRouter from './categories';
+import itemsRouter from './items';
+import modesRouter from './modes';
+import transactionsRouter from './transactions';
+import uomRouter from './uom';
+import usersRouter from './users';
 
-const indexRouter = express.Router();
+const appRouter = express.Router();
 
-indexRouter.get('/', (req, res) =>
-  res.status(200).json({ message: testEnvironmentVariable })
-);
+appRouter.get('/', controllers.appHome);
+appRouter.get('/items', itemsRouter);
+appRouter.get('/transactions', transactionsRouter);
+appRouter.get('/uom', uomRouter);
+appRouter.get('/users', usersRouter);
+appRouter.get('/modes', modesRouter);
+appRouter.get('/categories', categoriesRouter);
 
-export default indexRouter;
+export default appRouter;

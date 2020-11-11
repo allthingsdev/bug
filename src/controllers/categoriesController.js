@@ -1,0 +1,1 @@
+export const catHome = (req, res) => res.status(200).json({ message: "Categories Controller" });

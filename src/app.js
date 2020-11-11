@@ -2,7 +2,7 @@ import logger from 'morgan';
 import express from 'express';
 import cookieParser from 'cookie-parser';
 
-import indexRouter from './routes/index.js';
+import indexRouter from './routes/index';
 import transactionsRouter from './routes/transactions.js';
 import itemsRouter from './routes/items.js';
 import categoriesRouter from './routes/categories.js';

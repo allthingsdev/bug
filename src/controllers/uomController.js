@@ -1,0 +1,1 @@
+export const uomHome = (req, res) => res.status(200).json({ message: "Unit Of Measure Controller" });

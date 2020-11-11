@@ -1,0 +1,1 @@
+export const appHome = (req, res) => res.status(200).json({ message: "Home Page Controller" });
