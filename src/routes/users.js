@@ -1,10 +1,8 @@
 import express from 'express'
-import { testEnvironmentVariable } from '../settings.js';
+import { uomHome } from '../controllers/index.js';
 
 const usersRouter = express.Router();
 
-usersRouter.get('/', function (req, res, next) {
-    return res.status(200).json({ message: testEnvironmentVariable });
-});
+usersRouter.get('/', uomHome);
 
 export default usersRouter;

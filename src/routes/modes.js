@@ -1,9 +1,8 @@
 import express from 'express'
-import { testEnvironmentVariable } from '../settings.js'
+import { testEnvironmentVariable } from '../settings.js';
+import * as controllers from '../controllers/modesController';
 const modesRouter = express.Router();
 
-modesRouter.get('/', function (req, res, next) {
-    return res.status(200).json({ message: testEnvironmentVariable });
-});
+modesRouter.get('/', controllers.modesHome);
 
 export default modesRouter;

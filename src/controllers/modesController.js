@@ -1,0 +1,1 @@
+export const modesHome = (req, res) => res.status(200).json({ message: "Payment Modes Controller" });

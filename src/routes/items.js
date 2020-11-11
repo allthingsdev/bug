@@ -1,9 +1,8 @@
-import express from 'express'
-import { testEnvironmentVariable } from '../settings.js'
+import express from 'express';
+import { itemsHome } from '../controllers';
+
 const itemsRouter = express.Router();
 
-itemsRouter.get('/', function (req, res, next) {
-    return res.status(200).json({ message: testEnvironmentVariable });
-});
+itemsRouter.get('/', itemsHome);
 
 export default itemsRouter;
